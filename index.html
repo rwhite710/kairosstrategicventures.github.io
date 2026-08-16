@@ -4,15 +4,20 @@
 <meta charset="UTF-8">
 <title>Kairos Strategic Ventures</title>
 
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+
 <style>
+    /* --- Global Styles --- */
     body {
-        font-family: "Segoe UI", Arial, sans-serif;
+        font-family: "Merriweather", "Georgia", serif; /* Serif investment-firm feel */
         margin: 0;
         padding: 0;
         background: #f4f6f8;
         color: #222;
     }
 
+    /* --- Main Container --- */
     .container {
         max-width: 900px;
         margin: 60px auto;
@@ -20,24 +25,35 @@
         padding: 60px 70px;
         box-shadow: 0 4px 25px rgba(0,0,0,0.10);
         border-radius: 12px;
-        border-top: 6px solid #1e4fa8; /* Blue accent from your logo */
+        border-top: 6px solid #1e4fa8; /* Blue accent */
     }
 
+    /* --- Logo Section --- */
     .logo {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .logo img {
-        max-width: 320px; /* Enlarged logo */
+        max-width: 320px;
     }
 
+    /* Horizontal divider under logo */
+    .divider {
+        width: 100%;
+        height: 2px;
+        background: #1e4fa8;
+        margin: 25px 0 40px 0;
+        opacity: 0.25;
+    }
+
+    /* --- Typography --- */
     h1 {
         font-size: 34px;
         font-weight: 600;
-        color: #1e4fa8; /* Blue accent */
-        text-align: left;
+        color: #1e4fa8;
         margin-bottom: 10px;
+        text-align: left;
     }
 
     h2 {
@@ -46,13 +62,13 @@
         margin-top: 45px;
         margin-bottom: 12px;
         color: #333;
-        border-left: 5px solid #1e4fa8; /* Blue accent bar */
+        border-left: 5px solid #1e4fa8;
         padding-left: 12px;
     }
 
     p {
         font-size: 17px;
-        line-height: 1.65;
+        line-height: 1.7;
         margin-bottom: 20px;
     }
 
@@ -66,14 +82,16 @@
         margin-bottom: 10px;
     }
 
+    /* --- Footer --- */
     footer {
         text-align: center;
         margin-top: 60px;
         font-size: 15px;
         color: #555;
+        padding: 20px 0;
+        border-top: 6px solid #1e4fa8; /* Footer accent bar */
     }
 </style>
-
 </head>
 
 <body>
@@ -83,6 +101,8 @@
     <div class="logo">
         <img src="KSV logo.png" alt="Kairos Strategic Ventures Logo">
     </div>
+
+    <div class="divider"></div>
 
     <h1>Kairos Strategic Ventures</h1>
     <p><em>A privately held family investment entity focused on stewardship, stability, and long‑term income generation and growth.</em></p>
@@ -126,3 +146,4 @@
 
 </body>
 </html>
+
