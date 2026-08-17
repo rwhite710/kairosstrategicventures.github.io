@@ -75,6 +75,30 @@
     transform: translateY(-6px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
+/* --- Premium Hover Effects for Cards --- */
+.card {
+    transition: 
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background-color 0.25s ease,
+        border-radius 0.25s ease;
+}
+
+/* Main hover effect */
+.card:hover {
+    transform: translateY(-6px) scale(1.02);        /* subtle lift + scale */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);        /* deeper shadow */
+    background-color: #f9fbff;                     /* slight color tint */
+    border-color: #1e4fa8;                         /* highlight border */
+    border-radius: 14px;                           /* rounded corner animation */
+}
+
+/* Optional: header-only hover effect */
+.card:hover .card-header {
+    background-color: #dce6f7;                     /* slightly darker tint */
+    transition: background-color 0.25s ease;
+}
 
     /* Tinted header bar inside each card */
     .card-header {
