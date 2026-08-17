@@ -10,7 +10,7 @@
 <style>
     /* --- Global Styles --- */
     body {
-        font-family: "Merriweather", "Georgia", serif; /* Serif investment-firm feel */
+        font-family: "Merriweather", "Georgia", serif; /* Investment-firm serif aesthetic */
         margin: 0;
         padding: 0;
         background: #f4f6f8;
@@ -47,6 +47,28 @@
         opacity: 0.25;
     }
 
+    /* --- Card Layout --- */
+    .card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        padding: 0;
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+
+    /* Tinted header bar inside each card */
+    .card-header {
+        background: #e8eef8; /* Soft blue tint */
+        padding: 20px 30px;
+        border-bottom: 2px solid #1e4fa8;
+    }
+
+    /* Section content inside card */
+    .card-content {
+        padding: 30px 40px;
+    }
+
     /* --- Typography --- */
     h1 {
         font-size: 34px;
@@ -59,8 +81,7 @@
     h2 {
         font-size: 24px;
         font-weight: 600;
-        margin-top: 45px;
-        margin-bottom: 12px;
+        margin: 0;
         color: #333;
         border-left: 5px solid #1e4fa8;
         padding-left: 12px;
@@ -82,6 +103,15 @@
         margin-bottom: 10px;
     }
 
+    /* --- Section Separator (between cards) --- */
+    .section-separator {
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #1e4fa8, transparent);
+        opacity: 0.25;
+        margin: 40px 0;
+    }
+
     /* --- Footer --- */
     footer {
         text-align: center;
@@ -99,7 +129,7 @@
 <div class="container">
 
     <div class="logo">
-        <img src="KSV logo.png" alt="Kairos Strategic Ventures Logo">
+        <img src="logo.png" alt="Kairos Strategic Ventures Logo">
     </div>
 
     <div class="divider"></div>
@@ -107,35 +137,69 @@
     <h1>Kairos Strategic Ventures</h1>
     <p><em>A privately held family investment entity focused on stewardship, stability, and long‑term income generation and growth.</em></p>
 
-    <h2>About</h2>
-    <p>Kairos Strategic Ventures was established in 2025 as a private family investment entity dedicated to building durable, income‑producing assets. Our approach emphasizes responsible growth, disciplined capital deployment, and long‑term stewardship.</p>
+    <!-- ABOUT CARD -->
+    <div class="card">
+        <div class="card-header">
+            <h2>About</h2>
+        </div>
+        <div class="card-content">
+            <p>Kairos Strategic Ventures was established in 2025 as a private family investment entity dedicated to building durable, income‑producing assets. Our approach emphasizes responsible growth, disciplined capital deployment, and long‑term stewardship.</p>
 
-    <p>We focus on investments that generate reliable income rather than speculative strategies. Capital is deployed into real‑world assets that produce measurable returns without relying on future appreciation or liquidation.</p>
+            <p>We focus on investments that generate reliable income rather than speculative strategies. Capital is deployed into real‑world assets that produce measurable returns without relying on future appreciation or liquidation.</p>
 
-    <p>Our long‑term vision is to build a stable investment foundation designed to support future generations through consistent, sustainable income and growth.</p>
+            <p>Our long‑term vision is to build a stable investment foundation designed to support future generations through consistent, sustainable income and growth.</p>
+        </div>
+    </div>
 
-    <h2>Stewardship Focus</h2>
-    <ul>
-        <li>Diversified Dividend Portfolio</li>
-        <li>Real Estate Acquisition & Management</li>
-        <li>Short‑Term Rental Development</li>
-        <li>Land & Early‑Stage Asset Opportunities</li>
-        <li>Secured Private Lending</li>
-    </ul>
+    <div class="section-separator"></div>
 
-    <h2>Investment Philosophy</h2>
-    <ul>
-        <li>Generate dependable cash flow</li>
-        <li>Provide tangible, real‑asset backing</li>
-        <li>Avoid speculative or high‑risk strategies</li>
-        <li>Preserve capital while producing income</li>
-        <li>Support long‑term family stability and legacy</li>
-    </ul>
+    <!-- STEWARDSHIP CARD -->
+    <div class="card">
+        <div class="card-header">
+            <h2>Stewardship Focus</h2>
+        </div>
+        <div class="card-content">
+            <ul>
+                <li>Diversified Dividend Portfolio</li>
+                <li>Real Estate Acquisition & Management</li>
+                <li>Short‑Term Rental Development</li>
+                <li>Land & Early‑Stage Asset Opportunities</li>
+                <li>Secured Private Lending</li>
+            </ul>
+        </div>
+    </div>
 
-    <p>This disciplined approach ensures capital remains productive, accessible, and aligned with multi‑generational stewardship.</p>
+    <div class="section-separator"></div>
 
-    <h2>Contact</h2>
-    <p>For professional inquiries: <strong>info@kairosstrategicventures.com</strong></p>
+    <!-- PHILOSOPHY CARD -->
+    <div class="card">
+        <div class="card-header">
+            <h2>Investment Philosophy</h2>
+        </div>
+        <div class="card-content">
+            <ul>
+                <li>Generate dependable cash flow</li>
+                <li>Provide tangible, real‑asset backing</li>
+                <li>Avoid speculative or high‑risk strategies</li>
+                <li>Preserve capital while producing income</li>
+                <li>Support long‑term family stability and legacy</li>
+            </ul>
+
+            <p>This disciplined approach ensures capital remains productive, accessible, and aligned with multi‑generational stewardship.</p>
+        </div>
+    </div>
+
+    <div class="section-separator"></div>
+
+    <!-- CONTACT CARD -->
+    <div class="card">
+        <div class="card-header">
+            <h2>Contact</h2>
+        </div>
+        <div class="card-content">
+            <p>For professional inquiries: <strong>info@kairosstrategicventures.com</strong></p>
+        </div>
+    </div>
 
     <footer>
         © 2026 Kairos Strategic Ventures<br>
@@ -146,4 +210,5 @@
 
 </body>
 </html>
+
 
